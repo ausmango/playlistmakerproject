@@ -7,7 +7,7 @@ password = input("Please make a password: ")
 
 print("Welcome! Please sign-in with your new credentials below")
 
-#signin
+#signin/user-authentication
 
 while True:
     signinusername = input("Please enter your username: ")
@@ -39,10 +39,13 @@ while True:
     
     options_choice = int(options_choice)
     
+#Create new playlist to add to menu (working on making those new playlists functional after adding them)
+
     if options_choice == 1:
         playlist_name = input("\nWelcome to your new playlist! Add a name if wanted: \n")
         options.append(playlist_name)
     else:
+        #Like menu, where you can view your liked songs, add new ones, or return to the original menu
         while True:
             for index, value in enumerate(like_menu, 1):
                 print(index,value)
